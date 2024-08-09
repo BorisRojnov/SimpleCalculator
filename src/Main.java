@@ -6,13 +6,20 @@ public class Main {
 
 
         System.out.println("\t\t\t***Добро пожаловать в конвертер валют***");
+        System.out.println("Не забывайте при вводе чисел с плавающей точкой ставить знак \",\"\n");
         System.out.println("Введите сумму в российских рублях:");
 
         double rub = new Scanner(System.in).nextDouble();
 
+        System.out.println("Введите актуальный курс доллара: ");
+        double dol = new Scanner(System.in).nextDouble();
 
-        System.out.println("В долларах: " + (rub * 0.012));
-        System.out.println("В евро: " + (rub * 0.011));
+        System.out.println("Введите актуальный курс евро: ");
+        double eur = new Scanner(System.in).nextDouble();
+
+
+        System.out.println("В долларах: " + (rub * dol));
+        System.out.println("В евро: " + (rub * eur));
     }
 
 }
